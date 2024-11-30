@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogam</title>
+    <link rel="icon" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" href="favicon_io/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>YOGAM</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto navnames">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructor.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item book-class-btn-wrapper">
+                        <div class="book"><a href="" style="background-color: white; color: black; padding: 10px; margin-top: 5px;">BOOK A CLASS</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="background-color: rgb(116, 119, 119); padding: 50px 0;"> 
+        <div class="heading" style="background-color: rgb(66, 64, 64); text-align: center; color: white; position: relative; z-index: 1;">
+            <br> 
+            <h1 class="animated-title" style="padding-bottom: 10px; background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3rem; font-weight: 700; text-transform: uppercase;padding: 20px;">
+                Book Your Favourite Classes
+            </h1>
+            <h3 class="animated-subtitle" style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.4rem; font-weight: 500;">
+                Elevate Your Fitness Elevate Your Life
+            </h3>
+            <div class="background-overlay"></div>
+        </div>
+
+        <div class="container mt-5" style="text-align: center; color: white; border: solid 2px rgb(18, 17, 17); border-radius: 150px; padding: 10px; background-color: rgb(62, 65, 65);">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="form-container">
+                        <h2 class="form-title"><u>Fitness Class Booking</u></h2>
+
+
+
+
+                        <form id="booking-form" action="formacton.html">
+                            <!-- Name field -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="Name" placeholder="Enter Your Name" required>
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="Email" placeholder="Enter Your Email" required>
+                            </div>
+
+                            <!-- Mobile Number Input -->
+                            <div class="form-group">
+                                <label for="mbno">Mobile Number</label>
+                                <input type="number" maxlength="10" minlength="10" class="form-control" id="mbno" name="Mobile Number" placeholder="Enter Your Contact Number" required>
+                            </div>
+
+                            <!-- Gender Selection -->
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select class="form-control" id="gender" name="Gender" required>
+                                    <option value="" selected disabled>---Select---</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- City Input -->
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city" name="City" placeholder="Enter Your City" required>
+                            </div>
+
+                            <!-- Class Selection -->
+                            <div class="form-group">
+                                <label for="class">Choose Class</label>
+                                <select class="form-control" id="class" name="Class Type" required>
+                                    <option value="" selected disabled>---Select---</option>
+                                    <option value="Yoga">Yoga Classes</option>
+                                    <option value="Personal Training">Personal Training</option>
+                                    <option value="Group Fitness Class">Group Fitness Class</option>
+                                    <option value="Online Coaching">Online Coaching</option>
+                                    <option value="Nutrition Guidance">Nutrition Guidance</option>
+                                    <option value="Private Sessions">Private Sessions</option>
+                                    <option value="Open Gym">Open Gym</option>
+                                    <option value="Physiatrist-Led Sessions">Physiatrist-Led Sessions</option>
+                                    <option value="Zumba Classes">Zumba Classes</option>
+                                </select>
+                            </div>
+
+                            <!-- Instructor Selection -->
+                            <div class="form-group">
+                                <label for="instructor">Choose Instructor</label>
+                                <select class="form-control" id="instructor" name="Instructor Name" required>
+                                    <option value="" selected disabled>---Select---</option>
+                                    <option value="Zoe Bennett">Zoe Bennett</option>
+                                    <option value="Maya Awasthi">Maya Awasthi</option>
+                                    <option value="Lily Morgan">Lily Morgan</option>
+                                    <option value="Niran Somchai">Niran Somchai</option>
+                                    <option value="Jake Sullivian">Jake Sullivian</option>
+                                    <option value="Aanchal Hans">Aanchal Hans</option>
+                                </select>
+                            </div>
+
+                            <!-- Mode of Attendance -->
+                            <div class="form-group">
+                                <label for="mode">Mode of Attendance</label>
+                                <select class="form-control" id="mode" name="Class Mode" required>
+                                    <option value="" selected disabled>---Select---</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Offline">Offline</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-3">Book Class</button>
+                            <button type="reset" class="btn btn-primary mt-3">Reset</button>
+
+                        </form>
+                        <div id="message" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="background-color: rgb(33, 33, 34); padding: 40px 0;">
+        <div class="text-center">
+            <!-- Logo and Title -->
+            <h2 class="footer-heading" style="overflow: hidden; color: white; font-size: 36px;">
+                <a href="#" class="logo" style="color: white; text-decoration: none;">Yogam.com</a>
+            </h2>
+            <p class="menu" style="color: white;">
+                <h1 style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 28px; margin-bottom: 0;">
+                    <u>YOGAM</u>
+                </h1>
+                <h3 style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">
+                    Elevate Your Fitness, Elevate Your Life
+                </h3>
+            </p>
+    
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <a href="#" style="font-size: 36px; color: blue; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="#" style="font-size: 36px; color: purple; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" style="font-size: 36px; color: red; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="#" style="font-size: 36px; color: #3b5998; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+            </div>
+    
+            <!-- Footer Text -->
+            <p style="color: white; margin-top: 20px; font-size: 14px;">&copy; 2024 Yogam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript & Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7u9h7gmOgrwlh5QkQ9yY6u7dS4Sh+Ejl7IO3QhjTzjpOKTtPjmeqBdPQW+yzayE9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Y+LtRjlfmIjPcdhftOtwnPVjpFSz9y5yGMg6pnO3LM+a0Gn" crossorigin="anonymous"></script>
+
+    <script>
+        
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form from submitting the traditional way
+
+        const form = new FormData(this);
+        const formData = new URLSearchParams(form).toString(); // Serialize form data
+
+        // Replace this URL with the one from your Apps Script deployment
+        const url = 'YOUR_WEB_APP_URL'; // Update this with your URL
+
+        fetch("https://script.google.com/macros/s/AKfycbwRo_v7TU_6GAcIZiiGsMFLgrq-CS2zFO8JXvL7ev9M-wKtjUzHAb2W4lDNnvDq-Ye2/exec", {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Display the response message
+            document.getElementById('message').innerHTML = data.message;
+
+            // If the booking was successful, reset the form fields
+            if (data.success) {
+                // Reset the form after successful submission
+                document.getElementById('booking-form').reset();
+
+                // Optional: Redirect after success
+                window.location.href = 'formacton.html'; // You can change this to your preferred URL
+            }
+        })
+        .catch(error => {
+            // Display error message if something goes wrong
+            document.getElementById('message').innerHTML = 'An error occurred: ' + error.message;
+        });
+    });
+</script>
+
+</body>
+</html>
