@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogam</title>
+    <link rel="icon" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" href="favicon_io/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <!-- Bootstrap JS Bundle (includes Popper for dropdowns, tooltips, and popovers) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Brand Name or Logo with Gradient Text -->
+            <a class="navbar-brand" href="#">
+                <h1>YOGAM</h1>
+            </a>
+
+            <!-- Hamburger button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto navnames">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructor.html">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+
+                    <!-- "Book a Class" Button -->
+                    <li class="nav-item book-class-btn-wrapper">
+                       <div class="book"> <a href="" style="background-color: white; color: black; padding: 10px; margin-top: 5px;">BOOK A CLASS</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="background-color: rgb(116, 119, 119); padding: 50px 0;"> 
+        <div class="heading" style="background-color: rgb(66, 64, 64); text-align: center; color: white; position: relative; z-index: 1;">
+           <br> <h1 class="animated-title" style="padding-bottom: 10px; background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3rem; font-weight: 700; text-transform: uppercase;padding: 20px;">
+            Contact Us
+            </h1>
+            <h3 class="animated-subtitle" style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.4rem; font-weight: 500;">
+            Elevate Your Fitness Elevate Your Life
+            </h3>
+            <div class="background-overlay"></div>
+        </div>
+        <div class="row" id="contact">
+            <div class="container mt-5">
+                <div class="row" style="min-height: 600px;">
+                    <!-- Google Map Section -->
+                    <div class="col-12 col-md-6 maps mb-4 mb-md-0">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13812.616827304326!2d78.26059664096894!3d30.061113970211203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e387c78fe4f%3A0x81373dd24f2b2101!2sYogam%20Vidyalayam!5e0!3m2!1sen!2sin!4v1732166440781!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+        
+                    <!-- Contact Form Section -->
+                    <div class="col-12 col-md-6">
+                        <h2 class="text-uppercase mt-3 font-weight-bold text-center" style="color: black;">CONTACT US</h2>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mt-2" placeholder="ENTER NAME" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control mt-2" placeholder="ENTER EMAIL" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control mt-2" placeholder="ENTER CONTACT NUMBER" maxlength="10" minlength="10" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="What do you want to ask about?" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                        <label class="form-check-label" for="invalidCheck2">
+                                            Accept the policies
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+
+        <footer style="background-color: rgb(33, 33, 34); padding: 40px 0;">
+            <div class="text-center">
+                <!-- Logo and Title -->
+                <h2 class="footer-heading" style="overflow: hidden; color: white; font-size: 36px;">
+                    <a href="#" class="logo" style="color: white; text-decoration: none;">Yogam.com</a>
+                </h2>
+                <p class="menu" style="color: white;">
+                    <h1 style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                    -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 28px; margin-bottom: 0;">
+                        <u>YOGAM</u>
+                    </h1>
+                    <h3 style="background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+                    -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">
+                        Elevate Your Fitness, Elevate Your Life
+                    </h3>
+                </p>
+        
+                <!-- Social Media Links -->
+                <div class="footer-social">
+                    <a href="#" style="font-size: 36px; color: blue; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a href="#" style="font-size: 36px; color: purple; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#" style="font-size: 36px; color: red; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="#" style="font-size: 36px; color: #3b5998; margin: 0 15px; transition: transform 0.3s ease-in-out;">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </div>
+        
+                <!-- Footer Text -->
+                <p style="color: white; margin-top: 20px; font-size: 14px;">&copy; 2024 Yogam. All rights reserved.</p>
+            </div>
+        </footer>
+        </body>
+        </html>
